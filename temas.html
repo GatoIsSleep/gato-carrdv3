@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Temazos</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      display: flex;
+      flex-direction: row;
+      min-height: 100vh;
+      background-color: #000;
+      color: #ff77ff;
+      font-family: 'Courier New', monospace;
+      padding: 40px;
+      gap: 40px;
+    }
+
+    .lista {
+      width: 30%;
+    }
+
+    h1 {
+      color: #ff33cc;
+      margin-bottom: 30px;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 14px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+
+    li:hover {
+      color: #fff;
+    }
+
+    .info {
+      width: 40%;
+      border-left: 3px solid #ff33cc;
+      padding-left: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      min-height: 640px;
+    }
+
+    .info h2 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+
+    .info p {
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+
+    .letra {
+      white-space: pre-wrap;
+      font-size: 1rem;
+      color: #ff77ff;
+      margin-top: 20px;
+      line-height: 1.3;
+      background: linear-gradient(180deg, #ff33cc33, #ff00aa33);
+      padding: 10px 15px;
+      border-radius: 8px;
+      overflow: visible;
+      max-height: none;
+    }
+
+    .album-img-container {
+      width: 30%;
+      height: 640px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .album-img-container img {
+      max-width: 300px;
+      max-height: 300px;
+      border-radius: 12px;
+      box-shadow: 0 0 30px #ff33cc;
+      user-select: none;
+      pointer-events: none;
+      object-fit: contain;
+      transition: opacity 0.3s ease;
+    }
+
+    .volver {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 10px 20px;
+      border: 2px solid #d100ff;
+      border-radius: 10px;
+      color: #ff77ff;
+      text-decoration: none;
+      transition: background-color 0.3s;
+      width: fit-content;
+    }
+
+    .volver:hover {
+      background-color: #d100ff22;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="lista">
+    <h1>Temas</h1>
+    <ul>
+      <li onclick="mostrarInfo('maldicion')">Maldición Va a Ser un Día Hermoso</li>
+      <li onclick="mostrarInfo('pacman')">Un Pacman en el Savoy</li>
+      <li onclick="mostrarInfo('bandas')">Vamos las Bandas</li>
+      <li onclick="mostrarInfo('twist')">El Twist Del Pibe</li>
+      <li onclick="mostrarInfo('final')">El final es en donde partí</li>
+      <li onclick="mostrarInfo('mentiras')">Miéntele</li>
+      <li onclick="mostrarInfo('namfri')">Ñam Fri Fruli Fali Fru</li>
+    </ul>
+    <a class="volver" href="index.html">⟵ Volver</a>
+  </div>
+
+  <div class="info" id="info">
+    <h2>Selecciona un tema</h2>
+    <p>Verás aquí su artista, álbum, año y letra.</p>
+    <div class="letra" id="letra"></div>
+  </div>
+
+  <div class="album-img-container" id="album-img-container">
+    <img src="" alt="Imagen del álbum" id="album-img" style="visibility: hidden;" />
+  </div>
+
+  <audio id="reproductor" preload="auto"></audio>
+
+  <script>
+    const datos = {
+      maldicion: {
+        titulo: "Maldición Va a Ser un Día Hermoso",
+        artista: "Patricio Rey y los Redonditos de Ricota",
+        album: "Bang Bang... Estás Liquidado",
+        año: "1992",
+        letraArchivo: "1.txt",
+        imagen: "ALBUM/BangBang.png",
+        mp3: "1.mp3"
+      },
+      pacman: {
+        titulo: "Un Pacman en el Savoy",
+        artista: "Patricio Rey y los Redonditos de Ricota",
+        album: "Bang Bang... Estás Liquidado",
+        año: "1992",
+        letraArchivo: "2.txt",
+        imagen: "ALBUM/BangBang.png",
+        mp3: "2.mp3"
+      },
+      bandas: {
+        titulo: "Vamos las Bandas",
+        artista: "Patricio Rey y los Redonditos de Ricota",
+        album: "Un Baión para el Ojo Idiota",
+        año: "1987",
+        letraArchivo: "3.txt",
+        imagen: "ALBUM/OjoIdiota.png",
+        mp3: "3.mp3"
+      },
+      twist: {
+        titulo: "El Twist Del Pibe",
+        artista: "La Renga",
+        album: "La Renga",
+        año: "1998",
+        letraArchivo: "4.txt",
+        imagen: "ALBUM/LaRenga.png",
+        mp3: "4.mp3"
+      },
+      final: {
+        titulo: "El final es en donde partí",
+        artista: "La Renga",
+        album: "Despedazado por mil partes",
+        año: "1996",
+        letraArchivo: "5.txt",
+        imagen: "ALBUM/MilPartes.png",
+        mp3: "5.mp3"
+      },
+      mentiras: {
+        titulo: "Miéntele",
+        artista: "Los Bunkers",
+        album: "Vida de perros",
+        año: "2005",
+        letraArchivo: "6.txt",
+        imagen: "ALBUM/Perros.png",
+        mp3: "6.mp3"
+      },
+      namfri: {
+        titulo: "Ñam Fri Fruli Fali Fru",
+        artista: "Patricio Rey y los Redonditos de Ricota",
+        album: "Gulp!",
+        año: "1985",
+        letraArchivo: "7.txt",
+        imagen: "ALBUM/Gulp.png",
+        mp3: "7.mp3"
+      }
+    };
+
+    async function mostrarInfo(id) {
+      const tema = datos[id];
+      const info = document.getElementById('info');
+      const letraDiv = document.getElementById('letra');
+      const albumImg = document.getElementById('album-img');
+      const reproductor = document.getElementById('reproductor');
+
+      // Mostrar datos
+      info.innerHTML = `
+        <h2>${tema.titulo}</h2>
+        <p><strong>Artista:</strong> ${tema.artista}</p>
+        <p><strong>Álbum:</strong> ${tema.album}</p>
+        <p><strong>Año:</strong> ${tema.año}</p>
+        <div class="letra" id="letra">Cargando letra...</div>
+      `;
+
+      // Mostrar imagen
+      if (tema.imagen) {
+        albumImg.src = tema.imagen;
+        albumImg.style.visibility = 'visible';
+        albumImg.alt = `Portada del álbum ${tema.album}`;
+      } else {
+        albumImg.style.visibility = 'hidden';
+      }
+
+      // Reproducir canción
+      if (tema.mp3) {
+        reproductor.src = tema.mp3;
+        reproductor.volume = 0.2;
+        reproductor.play();
+      }
+
+      // Cargar letra
+      try {
+        const response = await fetch(tema.letraArchivo);
+        if (!response.ok) throw new Error('No se pudo cargar la letra');
+        const texto = await response.text();
+        document.getElementById('letra').textContent = texto;
+      } catch (error) {
+        document.getElementById('letra').textContent = 'No se pudo cargar la letra.';
+      }
+    }
+  </script>
+
+</body>
+</html>

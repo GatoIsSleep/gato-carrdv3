@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gato Carrd V3</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body, html {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #000;
+      font-family: 'Courier New', monospace;
+      color: #ff77ff;
+    }
+    #overlay {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: #000;
+      z-index: 999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    @keyframes cambiarColorBorde {
+      0% { border-color: #ff00ff; }
+      25% { border-color: #ff1493; }
+      50% { border-color: #ff00aa; }
+      75% { border-color: #ff33cc; }
+      100% { border-color: #ff00ff; }
+    }
+    #start-button {
+      padding: 20px 40px;
+      font-size: 1.3rem;
+      color: #ff77ff;
+      background: transparent;
+      border: 6px solid #d100ff;
+      border-radius: 20px;
+      cursor: pointer;
+      animation: cambiarColorBorde 1s infinite;
+    }
+    #start-button:hover {
+      background-color: #d100ff22;
+      color: #fff;
+    }
+    #temas-btn {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 3000;
+      padding: 10px 18px;
+      background-color: #111;
+      color: #ff77ff;
+      border: 2px solid #d100ff;
+      border-radius: 10px;
+      font-family: 'Courier New', monospace;
+      text-decoration: none;
+      font-size: 1rem;
+      animation: cambiarColorBorde 1.5s infinite;
+      transition: background 0.3s;
+      display: none;
+    }
+    #temas-btn:hover {
+      background-color: #d100ff22;
+    }
+    #content {
+      max-width: 1000px;
+      width: 90%;
+      gap: 30px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    #left-column {
+      width: 300px;
+      margin-top: 120px;
+    }
+    #left-column img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: transform 1.5s ease;
+    }
+    #center-column {
+      width: 600px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .contenedor {
+      border: 6px solid #d100ff;
+      border-radius: 20px;
+      background-color: #111;
+      animation: cambiarColorBorde 1s infinite;
+      color: #ddd;
+      padding: 30px 40px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    .titulo-cancion { 
+      font-size: 1.2em;
+      font-weight: bold; 
+      margin-bottom: 5px; 
+      color: #ff77ff; 
+    }
+    .autor-album { 
+      font-size: 0.9em; 
+      color: #ccc; 
+      margin-bottom: 15px; 
+    }
+    #tiempo { 
+      font-size: 1rem;
+      margin-top: 10px; 
+    }
+    #visualizer {
+      margin: 15px auto;
+      display: flex;
+      gap: 6px;
+      width: 110px;
+      height: 40px;
+      align-items: flex-end;
+    }
+    .bar {
+      width: 20px;
+      background: linear-gradient(180deg, #ff33cc, #ff00aa);
+      border-radius: 4px 4px 0 0;
+      filter: drop-shadow(0 0 6px #ff00aa);
+      height: 10px;
+      transition: height 0.05s ease-out;
+    }
+    #next-button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      background: transparent;
+      border: 3px solid #d100ff;
+      border-radius: 12px;
+      color: #ff77ff;
+      cursor: pointer;
+    }
+    #next-button:hover {
+      background-color: #d100ff22;
+      color: #fff;
+    }
+
+    /* ZOOM IMAGEN */
+    #img-zoom-overlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0,0,0,0.95);
+      z-index: 2000;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 20px;
+    }
+    #img-zoom-overlay.active { display: flex; }
+
+    .main-image-container {
+      width: 75vh;
+      height: 75vh;
+      max-width: 90vw;
+      max-height: 75vh;
+      border-radius: 16px;
+      box-shadow: 0 0 40px #ff33cc;
+      margin-bottom: 20px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #111;
+    }
+    #img-zoom-overlay img.main {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      user-select: none;
+      pointer-events: none;
+      border-radius: 16px;
+    }
+    #img-zoom-close {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 2rem;
+      color: #ff77ff;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    #thumbnail-carousel {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      max-width: 90vw;
+    }
+    #thumbnail-carousel img {
+      width: 80px;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      cursor: pointer;
+      opacity: 0.7;
+      border: 2px solid transparent;
+      border-radius: 6px;
+      flex-shrink: 0;
+    }
+    #thumbnail-carousel img.selected {
+      opacity: 1;
+      border-color: #ff33cc;
+    }
+  </style>
+</head>
+<body>
+
+<!-- BOTÓN TEMAS -->
+<a href="temas.html" id="temas-btn">Temas</a>
+
+<!-- PANTALLA INICIAL -->
+<div id="overlay">
+  <div style="display: flex; flex-direction: column; align-items: center;">
+    <button id="start-button">Iniciar Página</button>
+    <p style="margin-top: 15px; color: #fff; font-size: 0.9rem; text-align: center;">
+      ¡Sin esto la música no suena!<br>
+      Hacelo por tus oídos, dale pa.
+    </p>
+  </div>
+ </div>
+
+<!-- CONTENIDO -->
+<div id="content" style="display:none;">
+  <div id="left-column">
+    <div class="contenedor">
+      <div style="color: #fff; font-size: 0.9rem; margin-bottom: 10px;">
+        Álbum de fotos
+      </div>
+      <img src="1.jpg" alt="Imagen 1" id="zoom-image" />
+    </div>
+  </div>
+
+  <div id="center-column">
+    <div class="contenedor">
+      <div class="titulo-cancion" id="titulo-cancion"></div>
+      <div class="autor-album" id="autor-album"></div>
+      <div id="tiempo">00:00 / 00:00</div>
+      <div id="visualizer">
+        <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+      </div>
+      <button id="next-button">▶ Siguiente Canción</button>
+      <audio id="audio">
+        <source id="audio-source" src="" type="audio/mpeg" />
+        Tu navegador no soporta audio HTML5.
+      </audio>
+    </div>
+
+    <div class="contenedor">
+     <h1>GatoXeneize</h1>
+     <p>
+     Carrd de Gato, 14 años, desde algún rincón de Magallanes, Chile.<br />
+     Antisocial incurable, amante de las guitarras melancólicas.<br />
+     Devoto de <strong>Los Redondos</strong> y <strong>El Cuarteto de Nos</strong>.<br />
+     Su biblia: <strong>Bang Bang... Estás Liquidado</strong>.<br />
+     Fanático de <strong>Colo-Colo</strong>, <strong>Boca Juniors</strong> y enamorado eterno del <strong>FC Barcelona</strong>.<br />
+     Esta página es solo una prueba.<br />
+     Si llegaste hasta acá, sos un chismoso.
+     </p>
+    </div>
+  </div>
+</div>
+
+<!-- ZOOM -->
+<div id="img-zoom-overlay" role="dialog" aria-modal="true" aria-labelledby="zoom-image" tabindex="-1">
+  <div id="img-zoom-close" aria-label="Cerrar imagen" role="button" tabindex="0">&times;</div>
+  <div class="main-image-container">
+    <img src="1.jpg" alt="Imagen1A" class="main" />
+  </div>
+  <div id="thumbnail-carousel">
+    <img src="1.jpg" data-full="1.jpg" class="selected" />
+    <img src="2.png" data-full="2.png" />
+    <img src="3.png" data-full="3.png" />
+    <img src="4.jpg" data-full="4.jpg" />
+    <img src="5b.jpg" data-full="5b.jpg" />
+    <img src="6.jpg" data-full="6.jpg" />
+    <img src="7.jpg" data-full="7.jpg" />
+  </div>
+</div>
+
+<script>
+  const canciones = [
+    { archivo: "1.mp3", titulo: "Maldición Va a Ser un Día Hermoso", artista: "Patricio Rey y los Redonditos de Ricota", album: "Bang Bang... Estás Liquidado" },
+    { archivo: "2.mp3", titulo: "Un Pacman en el Savoy", artista: "Patricio Rey y los Redonditos de Ricota", album: "Bang Bang... Estás Liquidado" },
+    { archivo: "3.mp3", titulo: "Vamos las Bandas", artista: "Patricio Rey y los Redonditos de Ricota", album: "Un Baión para el Ojo Idiota" },
+    { archivo: "4.mp3", titulo: "El Twist Del Pibe", artista: "La Renga", album: "La Renga" },
+    { archivo: "5.mp3", titulo: "El final es en donde partí", artista: "La Renga", album: "Despedazado por mil partes" },
+	{ archivo: "6.mp3", titulo: "Miéntele", artista: "Los Bunkers", album: "Vida de Perros" },
+	{ archivo: "7.mp3", titulo: "Ñam Fri Fruli Fali Fru", artista: "Patricio Rey y los Redonditos de Ricota", album: "Gulp!" }
+  ];
+
+  let ultimaCancion = null;
+  const startBtn = document.getElementById('start-button');
+  const overlay = document.getElementById('overlay');
+  const content = document.getElementById('content');
+  const audio = document.getElementById('audio');
+  const audioSrc = document.getElementById('audio-source');
+  const tiempo = document.getElementById('tiempo');
+  const bars = [...document.querySelectorAll('.bar')];
+  const titulo = document.getElementById('titulo-cancion');
+  const autor = document.getElementById('autor-album');
+  const nextBtn = document.getElementById('next-button');
+  const temasBtn = document.getElementById('temas-btn');
+
+  const zoomImage = document.getElementById('zoom-image');
+  const zoomOverlay = document.getElementById('img-zoom-overlay');
+  const zoomImg = zoomOverlay.querySelector('img.main');
+  const thumbnails = [...document.querySelectorAll('#thumbnail-carousel img')];
+  const closeBtn = document.getElementById('img-zoom-close');
+
+  let audioContext, source, analyser, dataArray;
+
+  function formatTime(sec) {
+    const m = Math.floor(sec / 60);
+    const s = Math.floor(sec % 60);
+    return `${m.toString().padStart(2,'0')}:${s.toString().padStart(2,'0')}`;
+  }
+
+  function updateTime() {
+    if (!audio.duration) return;
+    tiempo.textContent = `${formatTime(audio.currentTime)} / ${formatTime(audio.duration)}`;
+  }
+
+  function animateVisualizer() {
+    if (!analyser) return;
+    analyser.getByteFrequencyData(dataArray);
+    const avg = dataArray.reduce((a, b) => a + b, 0) / dataArray.length;
+    const height = 10 + (avg / 255) * 40;
+    bars.forEach((bar, i) => {
+      const offset = Math.sin(Date.now() / 100 + i) * 5;
+      bar.style.height = `${Math.max(10, height + offset)}px`;
+    });
+    requestAnimationFrame(animateVisualizer);
+  }
+
+  function reproducirCancionAleatoria() {
+    let index;
+    do {
+      index = Math.floor(Math.random() * canciones.length);
+    } while (index === ultimaCancion && canciones.length > 1);
+    ultimaCancion = index;
+    const c = canciones[index];
+    titulo.textContent = c.titulo;
+    autor.textContent = `${c.artista} – ${c.album}`;
+    audioSrc.src = c.archivo;
+    audio.load();
+    audio.volume = 0.2;
+    audio.play();
+  }
+
+  startBtn.addEventListener('click', async () => {
+    overlay.style.display = 'none';
+    content.style.display = 'flex';
+    temasBtn.style.display = 'block';
+    audioContext = new (window.AudioContext || window.webkitAudioContext)();
+    source = audioContext.createMediaElementSource(audio);
+    analyser = audioContext.createAnalyser();
+    analyser.fftSize = 64;
+    dataArray = new Uint8Array(analyser.frequencyBinCount);
+    source.connect(analyser);
+    analyser.connect(audioContext.destination);
+    reproducirCancionAleatoria();
+    setInterval(updateTime, 500);
+    animateVisualizer();
+  });
+
+  nextBtn.addEventListener('click', () => {
+    reproducirCancionAleatoria();
+  });
+
+  audio.addEventListener('ended', () => {
+    reproducirCancionAleatoria();
+  });
+
+  zoomImage.addEventListener('click', () => {
+    zoomOverlay.classList.add('active');
+  });
+
+  closeBtn.addEventListener('click', () => {
+    zoomOverlay.classList.remove('active');
+  });
+
+  window.addEventListener('keydown', e => {
+    if (e.key === 'Escape') zoomOverlay.classList.remove('active');
+  });
+
+  thumbnails.forEach(thumb => {
+    thumb.addEventListener('click', () => {
+      thumbnails.forEach(t => t.classList.remove('selected'));
+      thumb.classList.add('selected');
+      zoomImg.src = thumb.dataset.full;
+    });
+  });
+
+  // Detección básica de DevTools
+  function detectDevTools() {
+    const start = performance.now();
+    debugger;
+    const end = performance.now();
+    if (end - start > 100) { // si tarda mucho, debugger está activo
+      alert("¡No uses la consola de desarrollo!");
+      location.reload();
+    }
+  }
+  setInterval(detectDevTools, 1000);
+</script>
+
+</body>
+</html>
