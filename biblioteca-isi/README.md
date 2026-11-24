@@ -1,4 +1,4 @@
-# Biblioteca histórica ISI en Chile — 112 fichas
+# Biblioteca histórica ISI en Chile — 123 fichas
 
 [**Abrir la galería web**](https://gatoissleep.github.io/gato-carrdv3/biblioteca-isi/) · [Página HTML](./index.html)
 
@@ -945,3 +945,101 @@ Contexto: [Inflación crónica, Memoria Chilena](https://www.memoriachilena.gob.
 ---
 
 **Licencias y alcance:** las imágenes están vinculadas a registros institucionales; no se redistribuyen sus originales. Es posible que algunas miniaturas no carguen: en ese caso, abre la fuente. Los títulos de las fichas son descriptivos y las explicaciones son interpretaciones históricas, no pies de foto oficiales. Consulta las condiciones de reproducción de cada fuente.
+
+### 113. Filas para abastecerse de alimentos
+
+[![Filas para abastecerse de alimentos](https://www.memoriachilena.gob.cl/602/articles-65329_thumbnail.jpg)](https://www.memoriachilena.gob.cl/602/w3-article-65329.html)
+
+**Significado:** La escasez obligaba a dedicar tiempo a conseguir alimentos básicos.
+
+**Fuente:** [Memoria Chilena / Biblioteca Nacional de Chile](https://www.memoriachilena.gob.cl/602/w3-article-65329.html). **Autor:** Teresa Donoso Loero. **Fecha:** 1970–1973 (publicada en 1974).
+
+
+### 114. Productos agotados en un almacén
+
+[![Productos agotados en un almacén](https://www.memoriachilena.gob.cl/602/articles-65334_thumbnail.jpg)](https://www.memoriachilena.gob.cl/602/w3-article-65334.html)
+
+**Significado:** Los letreros evidencian dificultades de abastecimiento hacia 1972.
+
+**Fuente:** [Memoria Chilena / Biblioteca Nacional de Chile](https://www.memoriachilena.gob.cl/602/w3-article-65334.html). **Autor:** Autor no indicado. **Fecha:** 1972.
+
+
+### 115. Marcha de las Ollas Vacías
+
+[![Marcha de las Ollas Vacías](https://www.memoriachilena.gob.cl/602/articles-65219_thumbnail.jpg)](https://www.memoriachilena.gob.cl/602/w3-article-65219.html)
+
+**Significado:** La movilización opositora convirtió el abastecimiento en un conflicto político.
+
+**Fuente:** [Memoria Chilena / Biblioteca Nacional de Chile](https://www.memoriachilena.gob.cl/602/w3-article-65219.html). **Autor:** Publicada por Teresa Donoso Loero. **Fecha:** 1971.
+
+
+### 116. Marcha de las cacerolas vacías
+
+[![Marcha de las cacerolas vacías](https://www.memoriachilena.gob.cl/602/articles-65220_thumbnail.jpg)](https://www.memoriachilena.gob.cl/602/w3-article-65220.html)
+
+**Significado:** La protesta refleja la creciente polarización, no una causa única de la crisis.
+
+**Fuente:** [Memoria Chilena / Biblioteca Nacional de Chile](https://www.memoriachilena.gob.cl/602/w3-article-65220.html). **Autor:** Publicada por Teresa Donoso Loero. **Fecha:** 1971 (fecha del pie de foto).
+
+
+### 117. Filas en Calbuco
+
+[![Filas en Calbuco](https://commons.wikimedia.org/wiki/Special:FilePath/Articles-38931%20imagen.jpg)](https://commons.wikimedia.org/wiki/File:Articles-38931_imagen.jpg)
+
+**Significado:** La escasez también afectó localidades fuera de Santiago.
+
+**Fuente:** [Archivo Nacional de Chile / Wikimedia Commons (CC BY-SA 4.0)](https://commons.wikimedia.org/wiki/File:Articles-38931_imagen.jpg). **Autor:** Jorge Yunes Velasco. **Fecha:** 1972.
+
+
+### 118. Huelga en Sumar
+
+[![Huelga en Sumar](https://www.memoriachilena.gob.cl/602/articles-75458_thumbnail.jpg)](https://www.memoriachilena.gob.cl/602/w3-article-75458.html)
+
+**Significado:** Las tensiones laborales afectaron al sector manufacturero; la fecha exacta no está determinada.
+
+**Fuente:** [Memoria Chilena / Biblioteca Nacional de Chile](https://www.memoriachilena.gob.cl/602/w3-article-75458.html). **Autor:** Museo Histórico Nacional. **Fecha:** 1965–1975.
+
+
+### 119. Marcha de apoyo a la huelga de El Teniente
+
+[![Marcha de apoyo a la huelga de El Teniente](https://www.memoriachilena.gob.cl/602/articles-128190_thumbnail.jpg)](https://www.memoriachilena.gob.cl/602/w3-article-128190.html)
+
+**Significado:** La huelga minera de 1973 refleja conflictos laborales y políticos en un sector exportador estratégico.
+
+**Fuente:** [Memoria Chilena / Biblioteca Nacional de Chile](https://www.memoriachilena.gob.cl/602/w3-article-128190.html). **Autor:** Armindo Cardoso. **Fecha:** 1973.
+
+
+### 120. Movilización de Patria y Libertad
+
+[![Movilización de Patria y Libertad](https://www.memoriachilena.gob.cl/602/articles-128193_thumbnail.jpg)](https://www.memoriachilena.gob.cl/602/w3-article-128193.html)
+
+**Significado:** La participación de la extrema derecha en las protestas muestra la desestabilización política.
+
+**Fuente:** [Memoria Chilena / Biblioteca Nacional de Chile](https://www.memoriachilena.gob.cl/602/w3-article-128193.html). **Autor:** Armindo Cardoso. **Fecha:** 1973.
+
+
+### 121. Protesta de 1973
+
+[![Protesta de 1973](https://www.memoriachilena.gob.cl/602/articles-84052_thumbnail.jpg)](https://www.memoriachilena.gob.cl/602/w3-article-84052.html)
+
+**Significado:** Documenta el clima de movilización y conflicto durante el último año del gobierno de Allende.
+
+**Fuente:** [Memoria Chilena / Biblioteca Nacional de Chile](https://www.memoriachilena.gob.cl/602/w3-article-84052.html). **Autor:** Juan Domingo Marinello. **Fecha:** 1973.
+
+
+### 122. Riña callejera durante la Unidad Popular
+
+[![Riña callejera durante la Unidad Popular](https://www.memoriachilena.gob.cl/602/articles-65337_thumbnail.jpg)](https://www.memoriachilena.gob.cl/602/w3-article-65337.html)
+
+**Significado:** El conflicto político llegó a la vida cotidiana; no constituye por sí solo evidencia del fracaso económico.
+
+**Fuente:** [Memoria Chilena / Biblioteca Nacional de Chile](https://www.memoriachilena.gob.cl/602/w3-article-65337.html). **Autor:** Publicada por Teresa Donoso Loero. **Fecha:** 1972.
+
+
+### 123. CORFO moderna: Edificio Tecnológico de Curauma
+
+[![CORFO moderna: Edificio Tecnológico de Curauma](https://www.bibliotecanacionaldigital.gob.cl/bnd/635/articles-644926_thumbnail.jpg)](https://www.bibliotecanacionaldigital.gob.cl/bnd/635/w3-article-644926.html)
+
+**Significado:** Inaugurado en 2005, ilustra la continuidad de CORFO y su orientación hacia el desarrollo tecnológico después del ISI.
+
+**Fuente:** [Biblioteca Nacional Digital de Chile](https://www.bibliotecanacionaldigital.gob.cl/bnd/635/w3-article-644926.html). **Autor:** Jack Ceitelis. **Fecha:** 2005–2010.
