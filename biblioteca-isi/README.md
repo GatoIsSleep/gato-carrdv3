@@ -1,4 +1,4 @@
-# Biblioteca histórica ISI en Chile — 123 fichas
+# Biblioteca histórica ISI en Chile — 136 fichas
 
 [**Abrir la galería web**](https://gatoissleep.github.io/gato-carrdv3/biblioteca-isi/) · [Página HTML](./index.html)
 
@@ -1043,3 +1043,115 @@ Contexto: [Inflación crónica, Memoria Chilena](https://www.memoriachilena.gob.
 **Significado:** Inaugurado en 2005, ilustra la continuidad de CORFO y su orientación hacia el desarrollo tecnológico después del ISI.
 
 **Fuente:** [Biblioteca Nacional Digital de Chile](https://www.bibliotecanacionaldigital.gob.cl/bnd/635/w3-article-644926.html). **Autor:** Jack Ceitelis. **Fecha:** 2005–2010.
+
+
+## Mateo — 1973 y fin del Estado empresario
+
+### 124. Industria Yarur en 1973
+
+[![Industria Yarur en 1973](https://www.memoriachilena.gob.cl/602/articles-62474_imagen.thumb_principal.jpg)](https://www.memoriachilena.gob.cl/602/w3-article-62474.html)
+
+**Significado:** La industria textil retratada en 1973 muestra parte del tejido manufacturero previo a la liberalización comercial y privatizaciones posteriores; la fotografía no muestra una venta empresarial.
+
+**Fuente:** [Museo Histórico Nacional / Memoria Chilena](https://www.memoriachilena.gob.cl/602/w3-article-62474.html). **Autor/Crédito:** Miguel Rubio Feliz. **Año:** 1973.
+
+### 125. Operario textil de Yarur
+
+[![Operario textil de Yarur](https://www.memoriachilena.gob.cl/602/articles-62488_imagen.thumb_principal.jpg)](https://www.memoriachilena.gob.cl/602/w3-article-62488.html)
+
+**Significado:** Documenta el trabajo fabril en la industria manufacturera chilena al terminar el ciclo económico proteccionista.
+
+**Fuente:** [Museo Histórico Nacional / Memoria Chilena](https://www.memoriachilena.gob.cl/602/w3-article-62488.html). **Autor/Crédito:** Miguel Rubio Feliz. **Año:** 1973.
+
+### 126. Operaria de Yarur en plena producción
+
+[![Operaria de Yarur en plena producción](https://www.memoriachilena.gob.cl/602/articles-62481_imagen.thumb_principal.jpg)](https://www.memoriachilena.gob.cl/602/w3-article-62481.html)
+
+**Significado:** Representa el empleo industrial y las capacidades manufactureras existentes antes de la apertura a la competencia externa.
+
+**Fuente:** [Museo Histórico Nacional / Memoria Chilena](https://www.memoriachilena.gob.cl/602/w3-article-62481.html). **Autor/Crédito:** Miguel Rubio Feliz. **Año:** 1973.
+
+### 127. Bombardeo del Palacio de La Moneda
+
+[![Bombardeo del Palacio de La Moneda](https://elpais.com/especiales/2023/foto-galeria-11-septiembre-1973/assets/img/9.jpg)](https://elpais.com/especiales/2023/foto-galeria-11-septiembre-1973/)
+
+**Significado:** La imagen muestra el golpe de Estado que puso fin al gobierno democrático. Las reformas de apertura y privatización se implementaron posteriormente y no de manera instantánea.
+
+**Fuente:** [El País — galería de fotografías históricas](https://elpais.com/especiales/2023/foto-galeria-11-septiembre-1973/). **Autor/Crédito:** Archivo fotográfico citado por El País. **Año:** 11 de septiembre de 1973.
+
+### 128. Registro documental del golpe de Estado
+
+[![Registro documental del golpe de Estado](https://www.archivonacional.gob.cl/sites/www.archivonacional.gob.cl/files/styles/16x9_grande/public/2023-09/articles-70778_imagen_portada.thumb_principal.jpg?h=73be0f73&itok=uD2gljLS)](https://www.archivonacional.gob.cl/11-de-septiembre-1973-golpe-civil-militar)
+
+**Significado:** El quiebre institucional de 1973 permitió posteriormente la adopción de reformas económicas orientadas al libre mercado.
+
+**Fuente:** [Archivo Nacional de Chile](https://www.archivonacional.gob.cl/11-de-septiembre-1973-golpe-civil-militar). **Autor/Crédito:** Archivo Nacional. **Año:** 1973.
+
+
+
+## Diego — CORFO moderna e industrias limpias
+
+### 129. Inicio de proyectos de hidrógeno verde de CORFO
+
+[![Inicio de proyectos de hidrógeno verde de CORFO](https://reportesostenible.cl/mt-content/uploads/2024/07/corfo-hidrogeno_2024-07-10-13-08-15.jpg)](https://reportesostenible.cl/blog/incentivan-industria-del-hidrogeno-verde-en-chile-con-programas-tecnologicos-para-aumentar-demanda-y-desarrollo-de-manufacturas/)
+
+**Significado:** El lanzamiento de programas tecnológicos de hidrógeno verde ilustra el cambio desde la administración de fábricas estatales al apoyo a innovación y nuevos sectores productivos.
+
+**Fuente:** [Reporte Sostenible](https://reportesostenible.cl/blog/incentivan-industria-del-hidrogeno-verde-en-chile-con-programas-tecnologicos-para-aumentar-demanda-y-desarrollo-de-manufacturas/). **Autor/Crédito:** Reporte Sostenible. **Año:** 2024.
+
+### 130. Centro Tecnológico de Hidrógeno Verde en Magallanes
+
+[![Centro Tecnológico de Hidrógeno Verde en Magallanes](https://s3-mspro.nyc3.cdn.digitaloceanspaces.com/tenant/658d9f90f0909def6c18fa2c/mediaLibrary/photo/517d1031-9300-4bd7-a7a1-deffab0a2a8a-extra-large-standard-q100.jpg?v=1732490262)](https://www.corfo.gob.cl/sites/cpp/nacional/22_11_2024_centro_magallanes/)
+
+**Significado:** La adjudicación de un centro tecnológico regional refleja la cooperación entre CORFO, empresas y centros de investigación para desarrollar capacidades de hidrógeno verde.
+
+**Fuente:** [Radio Polar / CORFO](https://www.corfo.gob.cl/sites/cpp/nacional/22_11_2024_centro_magallanes/). **Autor/Crédito:** Radio Polar. **Año:** 2024.
+
+### 131. Feria Hyvolution: cooperación por el hidrógeno
+
+[![Feria Hyvolution: cooperación por el hidrógeno](https://www.economia.gob.cl/wp-content/uploads/2024/09/presidente.png)](https://www.economia.gob.cl/2024/09/05/presidente-gabriel-boric-destaca-rol-de-instrumentos-corfo-y-programa-dps-para-el-desarrollo-de-hidrogeno-verde-en-chile.htm)
+
+**Significado:** La feria sobre hidrógeno verde refleja el rol de CORFO como promotor de alianzas, tecnología y transición energética.
+
+**Fuente:** [Ministerio de Economía, Chile](https://www.economia.gob.cl/2024/09/05/presidente-gabriel-boric-destaca-rol-de-instrumentos-corfo-y-programa-dps-para-el-desarrollo-de-hidrogeno-verde-en-chile.htm). **Autor/Crédito:** Ministerio de Economía. **Año:** 2024.
+
+### 132. Panel sobre industria minera e hidrógeno verde
+
+[![Panel sobre industria minera e hidrógeno verde](https://www.economia.gob.cl/wp-content/uploads/2024/09/imagen-de-whatsapp-2024-09-05-a-las-14-40-49-361845fd-1024x768.jpg)](https://www.economia.gob.cl/2024/09/05/presidente-gabriel-boric-destaca-rol-de-instrumentos-corfo-y-programa-dps-para-el-desarrollo-de-hidrogeno-verde-en-chile.htm)
+
+**Significado:** Los panelistas debaten aplicaciones del hidrógeno verde en minería, uno de los sectores donde se busca reducir emisiones.
+
+**Fuente:** [Ministerio de Economía, Chile](https://www.economia.gob.cl/2024/09/05/presidente-gabriel-boric-destaca-rol-de-instrumentos-corfo-y-programa-dps-para-el-desarrollo-de-hidrogeno-verde-en-chile.htm). **Autor/Crédito:** Ministerio de Economía. **Año:** 2024.
+
+### 133. Primera hidrolinera para camiones pesados
+
+[![Primera hidrolinera para camiones pesados](https://www.economia.gob.cl/wp-content/uploads/2026/10/whatsapp-image-2026-10-01-at-1-56-34-pm.jpeg)](https://www.economia.gob.cl/2026/10/02/programa-tecnologico-de-corfo-inaugura-la-primera-hidrolinera-para-camiones-de-alto-tonelaje-en-chile.htm)
+
+**Significado:** La estación en Quilicura, impulsada por un programa tecnológico de CORFO y socios privados, representa una aplicación concreta del hidrógeno en transporte de carga.
+
+**Fuente:** [Ministerio de Economía, Chile](https://www.economia.gob.cl/2026/10/02/programa-tecnologico-de-corfo-inaugura-la-primera-hidrolinera-para-camiones-de-alto-tonelaje-en-chile.htm). **Autor/Crédito:** Ministerio de Economía. **Año:** 2 de octubre de 2026.
+
+### 134. Emprendedores en Demo Day de Start-Up Chile
+
+[![Emprendedores en Demo Day de Start-Up Chile](https://www.latercera.com/resizer/v2/3VLKZQVZJFBLBM64SPSKWFOYJI.jpg?auth=968baa7bc63a97d2b8b0b8a9f976d4a95245bdb81c2085b1ef36a73a307fdedc&height=557&quality=70&smart=true&width=990)](https://www.latercera.com/branded/noticia/cenco-malls-fue-parte-de-demo-day-by-start-up-chile-en-sus-15-anos-de-innovacion-y-emprendimiento/)
+
+**Significado:** Start-Up Chile, programa de CORFO, apoya empresas emergentes y proyectos de base tecnológica en lugar de gestionar directamente industrias.
+
+**Fuente:** [La Tercera / Start-Up Chile](https://www.latercera.com/branded/noticia/cenco-malls-fue-parte-de-demo-day-by-start-up-chile-en-sus-15-anos-de-innovacion-y-emprendimiento/). **Autor/Crédito:** La Tercera. **Año:** 2025–2026.
+
+### 135. Financiamiento de investigación vinculada al litio
+
+[![Financiamiento de investigación vinculada al litio](https://www.tourinnovacion.cl/wp-content/uploads/2024/12/Foto-VPE-Corfo-Desafios-Innovacion-ID.jpeg)](https://www.tourinnovacion.cl/convocatorias/corfo-abre-cuatro-convocatorias-a-desafios-de-innovacion-id/)
+
+**Significado:** El apoyo a I+D para minería y salares representa la función moderna de CORFO en tecnología, transferencia de conocimiento y agregación de valor al litio.
+
+**Fuente:** [Tour Innovación](https://www.tourinnovacion.cl/convocatorias/corfo-abre-cuatro-convocatorias-a-desafios-de-innovacion-id/). **Autor/Crédito:** Tour Innovación. **Año:** 2024.
+
+### 136. Tecnología avanzada de procesamiento minero
+
+[![Tecnología avanzada de procesamiento minero](https://www.diarioestrategia.cl/images/showid2/6312654?w=1200&zc=4)](https://www.diarioestrategia.cl/texto-diario/mostrar/4536279/corfo-certifica-como-proyecto-i-d-innovador-procesamiento-tierras-raras-aclara)
+
+**Significado:** La certificación de un proyecto de investigación sobre tierras raras, aunque no sea de litio, evidencia el impulso a innovación minera y nuevas tecnologías.
+
+**Fuente:** [Diario Estrategia](https://www.diarioestrategia.cl/texto-diario/mostrar/4536279/corfo-certifica-como-proyecto-i-d-innovador-procesamiento-tierras-raras-aclara). **Autor/Crédito:** Diario Estrategia. **Año:** 2024.
+
